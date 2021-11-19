@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.info-style {
+    background: #EAE8FE;
+    border-radius: 4px;
+    line-height: 35px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;   
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.btn-money {
+    border-radius: 4px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.list-item-staged {
+    overflow-y: scroll;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left; 
+    padding: 12px 18px 12px 12px;
+    background: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+
+.item-staged {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.item-staged .img-item {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.item-staged .txt-item {
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.item-staged .num-counter {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;  
+    width: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px; 
+    margin-left: auto;
+}

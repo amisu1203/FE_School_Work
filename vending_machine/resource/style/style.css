@@ -1,0 +1,209 @@
+/* reset */
+.img-item {
+    display: block;
+}
+
+/* utill */
+/* ir = image replace */
+.ir {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    line-height: 0;
+    font-size: 1px;
+    color: transparent;
+}
+
+/* layout*/
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #EAE8FE;
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 247px;
+    margin-bottom: 67px;
+}
+
+/* 타이틀 스타일링*/
+.tit-app {
+    top: 0;
+    width: 100%;
+    max-width: 386px;
+    height: 180px;
+    background: no-repeat center / 100% 100% url(../img/Logo_img.png);
+}
+
+/* 자판기 스타일링 */
+.vending-machine {
+    width: 360px;
+    background: #ffffff;
+    padding: 31px 27px 28px;
+    margin-right: 18px;
+}
+
+/* 자판기 아이템 */
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-item .btn-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    width: 94px;
+    padding: 11px 0 9px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+.list-item .img-item {
+    width: 36px;
+}
+.list-item .tit-item {
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.list-item .txt-item {
+    display: block;
+    padding: 0 16px;
+    border-radius: 50px;
+    background: #6327FE;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* 자판기 잔액, 거스름 돈 */
+.cont-return {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+
+.cont-return .info-balance,.inp-put,.cont-get .list-item-staged {
+    width: 69%;
+    margin-right: 12px;
+}
+
+.cont-return .btn-return,.btn-put,.btn-get {
+    width: 32%;
+}
+
+/* 자판기 입금액, 입금 */
+.cont-put {
+    display: flex;
+    margin-bottom: 11px;
+}
+.cont-put .inp-put {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#BDBDBD;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    padding: 0 6px;
+}
+
+/* 자판기 선택한 음료, 획득 */
+.cont-get {
+    display: flex;
+    height: 106px;
+}
+
+.cont-get .btn-get {
+    background: #6327FE;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 자판기 소지금 스타일링 */
+.my-info {
+    width: 360px;
+    /* background: #ffffff; */
+    /* padding: 31px 27px 28px; */
+}
+
+
+.cont-mymoney {
+    background: #ffffff;
+    width: 100%;
+    padding: 9px 27px;
+    margin-bottom: 20px;
+}
+
+.cont-myitems {
+    background: #ffffff;
+    padding: 25px 27px;
+}
+.cont-myitems .tit-myitems {
+    display: block;
+    text-align: center;
+    margin-bottom: 13px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cont-myitems .list-item-staged {
+    height: 364px;
+}
+
+.cont-myitems .txt-total {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;   
+    margin-top: 6px;
+}
+
+
+@media screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) /* 최소 1px당 2개의 화소 */
+{
+    body {
+        background: #ffffff;
+    }
+    #app {
+        padding-top: 80px;
+    }
+    #app .tit-app {
+        max-width: 166px;
+        height: 71px;
+    }
+    .vending-machine {
+        margin: 0;
+    }
+}
